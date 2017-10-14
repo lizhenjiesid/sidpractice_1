@@ -9,12 +9,14 @@
 <title>雲端hw1</title>
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
-<h1 class="h1">"This is a demo for simple AJAX"</h1>
 </head>
+<h1 class="h1" id = "321">this id = ?</h1>
 <body>
 <input type="text" id="userinput" >
-<button type="button" class="button" onBlur="myrefresh()" onclick="fajax()" >Click Me</button>
-<div class="divTable" style = "width : 100% border: 1px solid #000;">
+<button type="button" class="button" onclick="fajax()" >Click Me</button>
+<input type="reset" onclick= "myrefresh()">
+
+<div class="divTable" style = "width : 100% border: 1px solid #123;">
   <div class="divTableBody">
     <div class="divTableRow">
       <div class="divTableCell">ID</div>

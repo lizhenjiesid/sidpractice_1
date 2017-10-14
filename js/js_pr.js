@@ -3,12 +3,13 @@ var intput ;
 function fajax(){
 "use strict";	
 $.ajax({ 
+	
     type: 'GET', 
     url: 'https://jsonplaceholder.typicode.com/posts?userId=' + document.getElementById("userinput").value, 
-
+    
     dataType: 'json',
     success: function (data) { 
-		
+		document.getElementById("321").innerHTML = "this is id = " + document.getElementById("userinput").value;
         $.each(data, function(index, element) {
             //$("#jsontTable").append($("<p>").html(element.id) );
 			
@@ -26,4 +27,3 @@ function myrefresh()
  {    "use strict";	
       window.location.reload();
  }
-
